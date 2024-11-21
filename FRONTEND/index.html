@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>IA Criminal Fire Analytics<span>.</span></h1>
+        </div>
+        <form id="formid">
+            <div class="linha">
+                <div class="input_box">
+                    <label for="latitude">Latitude</label>
+                    <input required type="number" id="latitude" name="latitude" placeholder="-17.55708">
+                </div>
+                <div class="input_box">
+                    <label for="longitude">Longitude</label>
+                    <input required type="number" id="longitude" name="longitude" placeholder="-57.20554">
+                </div>
+                <div class="input_box">
+                    <label for="data">Data</label>
+                    <input required type="date" name="data">
+                </div>
+            </div>
+            <div class="linha">
+                <div class="input_box">
+                    <label for="cep">CEP</label>
+                    <input required type="text" name="cep" placeholder="63180000" id="cep" maxlength="9" pattern="\d{5}-?\d{3}" required>
+                </div>
+                <div class="input_box">
+                    <label for="estado">Estado</label>
+                    <input required type="text" name="estado" id="input_estado">
+                </div>
+                <div class="input_box">
+                    <label for="cidade">Cidade</label>
+                    <input required type="text" name="cidade" id="input_cidade">
+                </div>
+            </div>
+            <div class="linha">
+                <div class="input_box">
+                    <label for="bioma">Bioma</label>
+                    <select name="bioma" id="select_bioma">
+                        <option value="amazonia">Amazônia</option>
+                        <option value="cerrado">Cerrado</option>
+                        <option value="caatinga">Caatinga</option>
+                        <option value="pampa">Pampa</option>
+                        <option value="pantanal">Pantanal</option>
+                        <option value="mata-atlantica">Mata Atlântica</option>
+                    </select>
+                </div>
+                <div class="input_box">
+                    <label for="dias_sem_chuva">Dias sem chuva</label>
+                    <input required type="number" name="dias_sem_chuva">
+                </div>
+                <div class="input_box">
+                    <label for="precipitacao">Precipitação (mm)</label>
+                    <input required type="number" name="precipitacao">
+                </div>
+            </div>
+            <button class="enviar" type="submit">
+                Enviar
+            </button>
+        </form>
+        <h3>> Em instantes, você receberá uma análise gráfica completa e indicadores assertivos que demonstram a probabilidade do registro de incêncio ter causas naturais ou criminosas.</h3>
+    </header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./form.js"></script>
+<script src="./analytics.js"></script>
