@@ -1,7 +1,10 @@
 :root{
-    --background: #1A1A1E;
+    /* --background: #1A1A1E;
     --text-color: #8234E9;
-    --color-span: #29E0A9;
+    --color-span: #29E0A9; */
+    --background: #FFFFFF;
+    --text-color: #ea8f28;
+    --color-span: #C70039;
 }
 
 *{
@@ -13,8 +16,8 @@
 
 body{
     /* background-color: var(--background); */
-    background: rgb(8,8,17);
-    background: linear-gradient(90deg, rgba(8,8,17,1) 0%, rgba(21,21,34,1) 92%);
+    background: #000000;
+    /* background: linear-gradient(90deg, rgba(8,8,17,1) 0%, rgba(21,21,34,1) 92%); */
 }
 
 header{
@@ -27,6 +30,8 @@ header{
 h1{
     color: var(--text-color);
     text-align: center;
+    /* -webkit-text-stroke-width: 0.25px;
+    -webkit-text-stroke-color: rgb(255, 255, 255); */
 }
 
 h1 span{
@@ -67,13 +72,13 @@ input, select {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 30%;
+    max-width: 28%;
     /* background-color: #8234E9; */
     background-color: var(--color-span);
     font-size: large;
     font-weight: bold;
-    padding: 10px;
-    margin: 40px;
+    padding: 8px;
+    margin-top: 30px;
     margin-left: 280px;
     border-radius: 5px;
     color: white;
@@ -82,7 +87,53 @@ input, select {
 
 h3{
     color: rgb(190, 184, 184);
-    font-size: medium;
+    font-size: smaller;
     font-weight: normal;
     text-align: center;
+    margin-top: 20px;
+}
+
+.res_container{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.risco_fogo{
+    display: flex;
+    gap: 16px;
+}
+
+.risco_number{
+    font-size: 2.5rem;
+}
+
+.risco_text{
+    font-size: 1rem;
+    color: #8234E9;
+}
+
+#map{
+    height: 300px; 
+    margin-top: 40px;
+}
+
+.container-resultado{
+    margin-top: 40px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.risco-text{
+    font-size: 2rem;
+}
+
+.invisivel{
+    display: none;
 }
